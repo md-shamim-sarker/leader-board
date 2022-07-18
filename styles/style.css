@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
 }
 
 /* Header Container Part Start */
@@ -22,11 +23,17 @@ body {
 .header-logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .header-logo img {
     width: 40px;
     margin: 26px 15.58px 17px 0;
+}
+
+.header-logo span {
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .header-nav {
@@ -38,7 +45,12 @@ body {
 .header-nav a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
 
+.header-nav a:hover {
+    color: #bdb2b2;
 }
 
 .header-nav img {
@@ -47,3 +59,39 @@ body {
 }
 
 /* Header Container Part End */
+.top-player-section {
+    width: 65vw;
+    margin: 36px auto 21px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 33px;
+}
+
+.top-player-section h2 {
+    margin-bottom: 40px;
+    color: #562EFF;
+}
+
+.top-players {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 29px;
+    column-gap: 106px;
+}
+
+.player {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin: 30px 0;
+}
